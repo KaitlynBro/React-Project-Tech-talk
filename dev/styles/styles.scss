@@ -1,0 +1,42 @@
+@import 'partials/setup';
+@import 'partials/variables';
+@import 'partials/header';
+@import 'partials/techTopics';
+@import 'partials/form';
+@import 'partials/footer';
+@import 'partials/footer';
+
+
+//general styles
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin: 0 auto;
+	//max-width: 100%;
+}
+
+.wrapper {
+	width: 1000px;
+	max-width: 1000%;
+	margin: 0 auto
+}
+
+
+//media queries
+
+@media (max-width: 760px) {
+	div.data{
+		width: 33.3%
+	}
+}
+
+@media (max-width: 480px) {
+	div.data{
+		width: 50%;
+	}
+
+	.mainNav a {
+		font-size: 25px;
+	}
+}
