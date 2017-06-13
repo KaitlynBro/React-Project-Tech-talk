@@ -37,11 +37,11 @@ class Header extends React.Component {
 					</nav>
 					<div className="headerContent">
 						<div className="description" id="about">
-						<h2>we are Tech talk</h2>
-						<p>Have a tech-related topic that interests you? Are you excited to share it with the tech community? Enter Tech talk. Choose a topic, write about it, maybe even share your resources. Share it - then get to combing through other tech talks!
-						</p>
-					</div>
-						<a href="#formSection"><button>Skip to main content</button></a>
+							<h2>we are Tech talk</h2>
+							<p>Have a tech-related topic that interests you? Are you excited to share it with the tech community? Enter Tech talk. Choose a topic, write about it, maybe even share your resources. Share it - then get to combing through other tech talks!
+							</p>
+						</div>
+						<a href="#formSection" className="buttonContainer"><button>Skip to main content</button></a>
 					</div>
 				</header>
 			</div>
