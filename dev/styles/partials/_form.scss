@@ -11,23 +11,37 @@ form {
 	}
 }
 
+input[type=radio] {
+	margin: 10px;
+}
+
+input[type=submit] {
+	padding: 10px 40px;
+	background-color: $primaryColor;
+	border-radius: 10%;
+}
+
 .names {
 	line-height: 35px;
 	margin-bottom: 10px;
 }
 
 .writeHere {
-	width: 500px;
+	max-width: 500px;
 	line-height: 50px;
 	margin-bottom: 10px;
+	margin: 0px 0px 10px;
+    width: 45%;
+    height: 106px;
 }
 
 .topicButtons {
-	margin-bottom: 15px;
-	margin-top: 15px;
+	margin-bottom: 25px;
+	margin-top: 25px;
 	label {
 		padding-left: 20px;
 		margin-bottom: 15px;
 		letter-spacing: 1px;
+		text-decoration: overline;
 	}
 }

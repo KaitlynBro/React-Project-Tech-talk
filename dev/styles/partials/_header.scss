@@ -1,3 +1,8 @@
+.logo a {
+    text-transform: capitalize;
+}
+
+
 .headerContent {
 	background-image: url('../../assets/headerbg.png');
 	height: 100vh;
@@ -10,7 +15,7 @@
 
 h1 {
 	position: relative;
-    width: 100%;
+    max-width: 100%;
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -34,7 +39,7 @@ h1 {
 
 nav {
     top: 0;
-	width: 100%;
+	max-width: 100%;
 	margin-top: 0;
 	ul {
 		display: inline-block;
@@ -76,11 +81,13 @@ div.description {
     font-size: 18px;
     background-color: $primaryColor;
     position: relative;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     padding-left: 10px;
     padding-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
     h2 {
         text-decoration: overline;
     }

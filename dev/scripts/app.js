@@ -27,7 +27,7 @@ class Header extends React.Component {
 				<header>
 					<nav>
 						<ul className="logo">
-							<li>Tt</li>
+							<a href=""><li>Tt</li></a>
 						</ul>
 						<ul className="mainNav">
 							<a href="#about"><li>About</li></a>
@@ -199,49 +199,54 @@ class App extends React.Component {
 					<Header />
 					<main>
 						<form onSubmit={this.renderPost} action="" id="formSection">
-								<p>Choose a category to write about</p>
-								  <div className="topicButtons">
-								  	<label>
-								  		HTML 
-								    	<input type="radio" onChange={this.selectTopic} name="category" value="HTML" />
-								    </label>
-								    <label>
-								    	CSS  
-								    	<input type="radio" onChange={this.selectTopic} name="category" value="CSS" />
-								    </label>
-								    <label>
-								    	Javascript
-								    	<input type="radio" onChange={this.selectTopic}name="category" value="Javascript" />
-								    </label>
-								    <label>
-								    	jQuery
-								    	<input type="radio" onChange={this.selectTopic} name="category" value="jQuery" />
-								    </label>
-								    <label>
-								    	React
-								   		<input type="radio" onChange={this.selectTopic} name="category" value="React" />
-								   	</label>
-								   	<label>
-								   		Firebase
-								    	<input type="radio" onChange={this.selectTopic} name="category" value="Firebase" />
-								   	</label>
-								   	<label>
-								   		Other
-								    	<input type="radio" onChange={this.selectTopic} name="category" value="Other" />
-								   	</label>
-								  </div>
+							<p>Choose a category to write about</p>
+							<div className="topicButtons">
+								<p>
+									<label>
+										HTML 
+										<input type="radio" onChange={this.selectTopic} name="category" value="HTML" />
+									</label>
+									<label>
+										CSS  
+										<input type="radio" onChange={this.selectTopic} name="category" value="CSS" />
+									</label>
+									<label>
+										Javascript
+										<input type="radio" onChange={this.selectTopic}name="category" value="Javascript" />
+									</label>
+								</p>
+								
+								<p>
+									<label>
+										jQuery
+										<input type="radio" onChange={this.selectTopic} name="category" value="jQuery" />
+									</label>
+									<label>
+										React
+										<input type="radio" onChange={this.selectTopic} name="category" value="React" />
+									</label>
+									<label>
+										Firebase
+									<input type="radio" onChange={this.selectTopic} name="category" value="Firebase" />
+									</label>
+									<label>
+										Other
+									<input type="radio" onChange={this.selectTopic} name="category" value="Other" />
+									</label>
+								</p>
+							</div>
 
-								<input onChange={this.setName} className="names" value={this.state.name} type="text" placeholder="Your name" id="nameInput" required/><br />
+							<input onChange={this.setName} className="names" value={this.state.name} type="text" placeholder="Your name" id="nameInput" required/><br />
 
-								<textarea onChange={this.setBlurb} className="writeHere" value={this.state.blurb} placeholder="Write Here" required></textarea><br />
+							<textarea onChange={this.setBlurb} className="writeHere" value={this.state.blurb} placeholder="Write Here" required></textarea><br />
 
-								<input type="submit" placeholder="Submit" onSubmit={this.append} />
-							</form>
+							<input type="submit" placeholder="Submit" onSubmit={this.append} />
+						</form>
 						<TechTopicCategories techNotes={this.state.techNotes} />
 						<techNotes />
 						<Footer />
 					</main>
-					</div>
+				</div>
 			</div>
 		)
 	}

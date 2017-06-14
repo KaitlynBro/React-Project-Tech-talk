@@ -13,34 +13,43 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	margin: 0 auto;
-	//max-width: 100%;
 }
 
 .wrapper {
-	width: 1000px;
-	max-width: 1000%;
+	max-width: 1000px;
 	margin: 0 auto
 }
 
 
 //media queries
 
-@media (max-width: 760px) {
-	div.data{
-		width: 33.3%
+@media (max-width: 820px) {
+
+	nav ul li {
+		padding-left: 0px;
+		padding-right: 0px;
 	}
-	input[type='radio'] { 
-		transform: scale(2); 
-		margin: 10px;
+
+	.buttonContainer {
+		display: none;
+	}
+
+	div.data {
+		max-width: 100%;
+	}
+
+	div.topicButtons {
+		max-width: 80%;
+    	margin: 0 auto;
+    	text-decoration: none;
+    	label {
+    		text-decoration: none;
+    	}
 	}
 }
 
 @media (max-width: 480px) {
-	div.data{
-		width: 50%;
-	}
-
-	.mainNav a {
-		font-size: 25px;
+	.mainNav {
+		display: none;
 	}
 }
